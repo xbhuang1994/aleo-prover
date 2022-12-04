@@ -23,3 +23,9 @@ jobs:
         cuda: 11.7.0 # optional, default is 11.7.0
     - name: Build Cuda
       run: cargo build --release --features cuda
+    - name: 'Upload Artifact'
+      uses: actions/upload-artifact@v3
+      with:
+        name: aleo-prover
+        path: aleo-prover
+        retention-days: 5

@@ -20,6 +20,6 @@ jobs:
       uses: Jimver/cuda-toolkit@v0.2.8
       with:
         # Cuda version
-        cuda: 11.8.0 # optional, default is 11.7.0
+        cuda: 11.7.0 # optional, default is 11.7.0
     - name: Build Cuda
       run: cargo build --release --features cuda
